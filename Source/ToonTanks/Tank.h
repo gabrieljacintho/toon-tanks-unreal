@@ -28,6 +28,10 @@ private:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (AllowPrivateAccess = "true"))
 	float MoveSpeed = 200.f;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (AllowPrivateAccess = "true"))
+	float TurnSpeed = 45.f;
 
 	void Move(float Value);
+
+	void Turn(float Value);
 };
