@@ -33,7 +33,7 @@ void ATank::Tick(float DeltaTime)
 		if (PlayerController->GetHitResultUnderCursor(ECollisionChannel::ECC_Visibility, false, HitResult))
 		{
 			TurretLookAt(HitResult.ImpactPoint);
-			//DrawDebugSphere(GetWorld(), HitResult.ImpactPoint, 20.f, 12, FColor::Red, false, -1.f);
+			DrawDebugSphere(GetWorld(), HitResult.ImpactPoint, 20.f, 12, FColor::Red, false, -1.f);
 		}
 	}
 }
