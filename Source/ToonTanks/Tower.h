@@ -25,4 +25,10 @@ private:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (AllowPrivateAccess = "true"))
 	float FireRange = 600.f;
+	FTimerHandle FireRateTimerHandle;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (AllowPrivateAccess = "true"))
+	float FireRate = 2.f;
+
+	bool InFireRange();
+	void CheckFireCondition();
 };

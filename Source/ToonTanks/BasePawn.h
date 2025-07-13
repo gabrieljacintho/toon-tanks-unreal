@@ -17,6 +17,7 @@ public:
 
 protected:
 	void TurretLookAt(FVector Target);
+	void Fire();
 
 private:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components", meta = (AllowPrivateAccess = "true"))
@@ -30,4 +31,7 @@ private:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (AllowPrivateAccess = "true"))
 	float Speed = 400.0f;
+
+	UPROPERTY(EditDefaultsOnly)
+	TSubclassOf<class AProjectile> Projectile;
 };
