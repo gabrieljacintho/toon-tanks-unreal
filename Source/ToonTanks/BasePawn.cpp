@@ -23,15 +23,10 @@ ABasePawn::ABasePawn()
 	ProjectileSpawnPoint->SetupAttachment(TurretMesh);
 }
 
-// Called when the game starts or when spawned
-void ABasePawn::BeginPlay()
+void ABasePawn::TurretLookAt(FVector Target)
 {
-	Super::BeginPlay();
-}
+	FVector Direction = Target - TurretMesh->GetComponentLocation();
+	FRotator Rotation = FRotator(0.f, Direction.Rotation().Yaw, 0.f);
 
-// Called every frame
-void ABasePawn::Tick(float DeltaTime)
-{
-	Super::Tick(DeltaTime);
+	TurretMesh->SetWorldRotation(Rotation);
 }
-
