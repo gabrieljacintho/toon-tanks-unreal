@@ -40,6 +40,18 @@ void ATank::Tick(float DeltaTime)
 	}
 }
 
+void ATank::HandleDestruction()
+{
+	Super::HandleDestruction();
+	SetActorHiddenInGame(true);
+	SetActorTickEnabled(false);
+}
+
+APlayerController* ATank::GetPlayerController()
+{
+	return PlayerController;
+}
+
 void ATank::BeginPlay()
 {
 	Super::BeginPlay();
