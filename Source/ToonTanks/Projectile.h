@@ -35,6 +35,9 @@ private:
 	UPROPERTY(EditAnywhere)
 	class UParticleSystem* HitParticles;
 
+	UPROPERTY(VisibleAnywhere)
+	class UParticleSystemComponent* TrailParticles;
+
 	UFUNCTION()
 	void OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit);
 };
