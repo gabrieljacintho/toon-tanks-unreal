@@ -36,4 +36,10 @@ private:
 
 	UPROPERTY(EditDefaultsOnly)
 	TSubclassOf<class AProjectile> Projectile;
+
+	UPROPERTY(EditAnywhere)
+	class UParticleSystem* DeathParticles;
+
+	UPROPERTY(EditAnywhere)
+	class USoundBase* DeathSound;
 };
