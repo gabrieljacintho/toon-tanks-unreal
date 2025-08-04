@@ -1,4 +1,4 @@
 # Toon Tanks
-Third-person shooter game for PC developed to study Unreal Engine and C++.
+Third-person shooter game for PC developed with Unreal Engine and C++ to study.
 
 [![](https://img.youtube.com/vi/MUFTZYHb_Ao/0.jpg)](https://youtu.be/MUFTZYHb_Ao)
