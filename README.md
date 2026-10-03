@@ -3,4 +3,4 @@
 Toon Tanks is a third-person shooter game prototype for PC developed with Unreal Engine and C++.
 
 ## Video
-[![](https://img.youtube.com/vi/MUFTZYHb_Ao/0.jpg)](https://youtu.be/MUFTZYHb_Ao)
+https://github.com/user-attachments/assets/04ad1d81-9f53-4186-8ff3-41a0524c3651
